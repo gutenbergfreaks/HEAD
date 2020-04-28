@@ -67,35 +67,53 @@ Below are the essential elements for any web document (websites/apps):
 
 **[⬆ back to top](#table-of-contents)**
 
+<!--
 ## Elements
+-->
+## 要素
 
+<!--
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+-->
+有効な `<head>` の要素には `meta`, `link`, `title`, `style`, `script`, `noscript` と `base` が含まれます。
 
+<!-- 
 These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
+-->
+これらの要素は、Webテクノロジーがドキュメントをどのように認識し、レンダリングするかについての情報を提供します。例えばブラウザ、検索エンジン、ボットなど
 
 ```html
 <!--
   Set the character encoding for this document, so that
   all characters within the UTF-8 space (such as emoji)
   are rendered correctly.
+　このドキュメントの文字エンコーディングを設定して、 UTF-8スペース内のすべての文字（絵文字など） 正しくレンダリングされます。
 -->
 <meta charset="utf-8">
 
 <!-- Set the document's title -->
+<!-- ドキュメントのタイトルを設定 -->
 <title>Page Title</title>
 
 <!-- Set the base URL for all relative URLs within the document -->
+<!-- ドキュメント内のすべての相対URLのベースURLを設定します
+訳注: 
+https://developer.mozilla.org/ja/docs/Web/HTML/Element/base
+-->
 <base href="https://example.com/page.html">
 
 <!-- Link to an external CSS file -->
+<!-- 外部CSSファイルへのリンク -->
 <link rel="stylesheet" href="styles.css">
 
 <!-- Used for adding in-document CSS -->
+<!-- ドキュメント内のCSSを追加するために使用されます -->
 <style>
   /* ... */
 </style>
 
 <!-- JavaScript & No-JavaScript tags -->
+<!-- JavaScriptおよびJavaScriptなしのタグ -->
 <script src="script.js"></script>
 <script>
   // function(s) go here
@@ -107,13 +125,17 @@ These elements provide information for how a document should be perceived, and r
 
 **[⬆ back to top](#table-of-contents)**
 
+<!--
 ## Meta
+-->
+## メタ
 
 ```html
 <!--
   The following 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
+　次の2つのメタタグは、<head>の最初に*ある必要があります* 適切なドキュメントのレンダリングを一貫して保証するため他のヘッド要素は、これらのタグの「後に」来る必要があります
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -122,30 +144,38 @@ These elements provide information for how a document should be perceived, and r
   Allows control over where resources are loaded from.
   Place as early in the <head> as possible, as the tag  
   only applies to resources that are declared after it.
+  リソースのロード元を制御できます。<head>のできるだけ早い位置にタグとして配置します。その後に宣言されたリソースにのみ適用されます。
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Name of web application (only should be used if the website is used as an app) -->
+<!-- Webアプリケーションの名前（Webサイトがアプリとして使用されている場合にのみ使用されます） -->
 <meta name="application-name" content="Application Name">
 
 <!-- Theme Color for Chrome, Firefox OS and Opera -->
+<!-- Chrome、Firefox OS、Operaのテーマの色 -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Short description of the document (limit to 150 characters) -->
 <!-- This content *may* be used as a part of search engine results. -->
+<!-- ドキュメントの短い説明（150文字まで） このコンテンツは、検索エンジンの結果の一部として使用される可能性があります。  -->
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
+<!-- 検索エンジンのクロールとインデックス作成の動作を制御する -->
 <meta name="robots" content="index,follow"><!-- All Search Engines -->
 <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
 <!-- Tells Google not to show the sitelinks search box -->
+<!-- サイトリンク検索ボックスを表示しないようにGoogleに指示します -->
 <meta name="google" content="nositelinkssearchbox">
 
 <!-- Tells Google not to provide a translation for this document -->
+<!-- このドキュメントの翻訳を提供しないようにGoogleに指示します -->
 <meta name="google" content="notranslate">
 
 <!-- Verify website ownership -->
+<!-- ウェブサイトの所有権を確認する -->
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 <meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
