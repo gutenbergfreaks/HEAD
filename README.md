@@ -184,27 +184,45 @@ https://developer.mozilla.org/ja/docs/Web/HTML/Element/base
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
 <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+<!-- ドキュメントの作成に使用したソフトウェアを特定します (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
 <!-- Short description of your document's subject -->
+<!-- 
+ドキュメントの件名の短い説明
+訳注: 要出典
+-->
 <meta name="subject" content="your document's subject">
 
 <!-- Gives a general age rating based on the document's content -->
+<!-- ドキュメントのコンテンツの一般的な年齢評価を示す -->
 <meta name="rating" content="General">
 
 <!-- Allows control over how referrer information is passed -->
+<!-- リファラー情報の受け渡し方法を制御できます -->
 <meta name="referrer" content="no-referrer">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- 利用可能な電話番号の自動検出とフォーマットを無効にする -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Completely opt out of DNS prefetching by setting to "off" -->
+<!-- "off"にすることで、DNSプリフェッチを完全にオプトアウトします。 -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
 <!-- Specifies the document to appear in a specific frame -->
+<!-- 
+特定のフレームに表示するドキュメントを指定します
+訳注 : 使用されていない? baseタグのtarget属性を使用することが推奨されている?
+-->
 <meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo tags -->
+<!-- 
+位置情報タグ
+訳注 : Google はインデックス時に利用しておらず、代わりにlink hreflang属性を使用することを推奨している
+https://blog.seoprofiler.com/googles-geo-meta-tags-web-pages/
+-->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
 <meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
