@@ -240,59 +240,95 @@ https://blog.seoprofiler.com/googles-geo-meta-tags-web-pages/
 
 ```html
 <!-- Points to an external stylesheet -->
+<!-- 外部スタイルシートを指定する -->
 <link rel="stylesheet" href="https://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
+<!-- コンテンツの重複問題を防止するのに役立ちます -->
 <link rel="canonical" href="https://example.com/article/?page=2">
 
 <!-- Links to an AMP HTML version of the current document -->
+<!-- 現在のドキュメントのAMP HTMLバージョンへのリンク -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 
 <!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
+<!-- Webアプリケーションの「インストール」資格情報を指定するJSONファイルへのリンク -->
 <link rel="manifest" href="manifest.json">
 
 <!-- Links to information about the author(s) of the document -->
+<!-- ドキュメントの作成者に関する情報へのリンク -->
 <link rel="author" href="humans.txt">
 
 <!-- Refers to a copyright statement that applies to the link's context -->
+<!-- リンクのコンテキストに適用される著作権ステートメントを参照します -->
 <link rel="license" href="copyright.html">
 
 <!-- Gives a reference to a location in your document that may be in another language -->
+<!-- 別の言語のドキュメント内の場所への参照を提供します -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
 <!-- Provides information about an author or another person -->
+<!-- 著者または他の人に関する情報を提供します -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
+<!-- 資料のコレクション（文書、書類など）を説明するドキュメントへのリンク
+訳注: HTML 5.1 以降非推奨
+参照リンク: 
+https://developer.mozilla.org/ja/docs/Web/HTML/Link_types
+https://html.spec.whatwg.org/multipage/links.html#linkTypes
+-->
 <link rel="archives" href="https://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
+<!-- 階層構造の最上位リソースへのリンク
+訳注: HTML 5 以降非推奨
+-->
 <link rel="index" href="https://example.com/article/">
 
 <!-- Provides a self reference - useful when the document has multiple possible references -->
+<!-- 自己参照を提供します-ドキュメントに複数の可能な参照がある場合に役立ちます
+訳注: W3C未定義、atom用？
+-->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
 <!-- The first, last, previous, and next documents in a series of documents, respectively -->
+<!-- 一連のドキュメントの最初、最後、前、次のドキュメント
+訳注: first, last 非推奨
+-->
 <link rel="first" href="https://example.com/article/">
 <link rel="last" href="https://example.com/article/?page=42">
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
 
 <!-- Used when a 3rd party service is utilized to maintain a blog -->
+<!-- サードパーティのサービスを利用してブログを管理する場合に使用されます
+訳注: W3C未定義
+-->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
+<!-- 別のWordPressブログがWordPressブログまたは投稿にリンクしたときに自動コメントを形成します
+訳注: W3C未定義
+-->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
 <!-- Notifies a URL when you link to it on your document -->
+<!-- ドキュメントにリンクしたときにURLに通知します
+訳注: W3C未定義
+-->
 <link rel="webmention" href="https://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client -->
+<!-- Micropubクライアントを使用して自分のドメインに投稿できるようにします
+訳注: W3C未定義
+-->
 <link rel="micropub" href="https://example.com/micropub">
 
 <!-- Open Search -->
+<!-- 検索を開く -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 
 <!-- Feeds -->
